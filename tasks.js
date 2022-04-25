@@ -32,7 +32,7 @@ let remainder = (100%2);
 //-------------------Q2.1-------------------:
 //Declare a variable called boolean and assign it a value of true.
 
-let boolean = true
+//let boolean = true
 
 
 //-------------------Q2.2-------------------:
@@ -58,7 +58,7 @@ Note:
    let firstName = "Bledar" ;
     let lastName = "Sharavolli" ;
     let fullName =firstName+ " " +lastName ;
-    print = "Hello i am"+" "+ fillName
+    print = "Hello i am"+" "+ fullName
 
 
 
@@ -81,7 +81,7 @@ One Awesome Message
 
    let firstName1 = "Bledi"
    let interest = "Traveling"
-   let  hobby = "Acting"
+   let  hobby = "do Acting"
    awesomeMessage =  "Hi, my name is"+ " " + firstName1 +"." +" I love "+" " +interest +" " +"In my spare time, I like to"+" "+ hobby+" "+".";
   +console.log(awesomeMessage)
 
@@ -116,41 +116,41 @@ let willBe = futureYear - myBirthday ;
 */
 
 let result = 15 - 6 * 2 + 8 / 4;
- result = 5;
+ //result = 5;
 
  let convert = 2 + "1";
- convert = 21;
+ //convert = 21;
 
  let sum1 = 5 + 4 + "2";
- sum1 = 92;
+ //sum1 = 92;
 
  let quotient = 20 / 4;
- quotient = 5 ;
+ //quotient = 5 ;
 
  let remainder1 = 8 % 3;
- remainder1 = 2 ;
+// remainder1 = 2 ;
 
  let exponent = 2 ** 8;
- exponent = 256;
+// exponent = 256;
 
  let n = 2;
  n += 5; 
-  n = 7 ;
+ // n = 7 ;
    n *= 2; 
-
+ //m = 4
  let r = 3;
   const s = r++; 
-   r = 4 ;
-    s = 3;
+  // r = 4 ;
+   // s = 3;
 
-/let a = 3;
-/ const b = ++a; // a = 4, b = 4//
+let a = 3;
+ const b = ++a; // a = 4, b = 4//
 
  let j = 7;
- j **= "hello"; // j = NaN???
+ j **= "hello"; // j = NaN
 
  let signedIn;
- console.log(signedIn);// udefined //???
+ console.log(signedIn);// udefined 
 
 //-------------------Q7-------------------:
 // Fill in the null,and uncomment the expression  (4 expressions)
@@ -187,6 +187,7 @@ Hint: +, -, *, /, and % are possible arithmetic operators
 
 //-------------------Q9-------------------:
 //  What does typeof() method return in javaScript?
+// inform the type of the valuable it can be number boolean string undefined
 // Uncomment the expressions below and replace null with your answer
 
  let result1 = typeof 5;
