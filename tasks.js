@@ -14,7 +14,7 @@ let answer1 = 21;
 let string = "Please do all of your assignments";
 let position = string.indexOf("your");
 
-let answer2 = 19;
+let answer2 = 17;
 
 // Task 3: What will the value of `pick` will be?
 
@@ -27,7 +27,7 @@ let answer3 = "blue" ;
 // in order for the `result` to be `Yellow`?
 
 let k = 18;
-let l = 23;
+let l = 25;
 let result = colors.slice(k, l);
 
 // Task 5. Consider you have the following variables.
@@ -36,10 +36,11 @@ let result = colors.slice(k, l);
 
 let a = 3;
 let b = 5;
-if-else =
+
+if (a<b) {console.log(b)}
 
         
-}) 
+else{ console.log(a)} ;
 
 
 //---------------Q2-----------------------------------
@@ -49,14 +50,16 @@ if-else =
 
 Now:
 Declare a variable and assign it a value that will result in a console.log in this format:
-
+let texty=
 "The file located at "C:\\Desktop\My Documents\Roster\names.txt" contains the names on the roster."
 
 Note:check the following link for more information about escaping characters in js.
 https://www.quackit.com/javascript/tutorial/javascript_escape_characters.cfm
 */
-
-
+let textY= "Good Morning \n\t Bye Bye";
+console.log(textY);
+let textA=" The File located at \"C :\\\\Desktop\\My Documents\\Roster\\names.txt\" contains the names on the roster.\""
+console.log(textA)
 //---------------Q3.1 :Logical operators---------------
 /*
 Evaluate the following values on console.
@@ -147,7 +150,8 @@ answers.
 /* Your code here */
 let weather1 = prompt("Is raining?(y/n)") ; 
 if (weather1=="y"){console.log("you should wear a raincoat")}
-else {console.log==null} ;
+if(weather1=="n") {console.log("Enjoy the sunshine")} 
+else {console.log("please check your answer , you can type only 'y' or 'n'")} ;
 // ---------------Q5.2:----------------
 
 // if your score plus, added to my score, is greater than 90
@@ -155,11 +159,11 @@ else {console.log==null} ;
 // we should celebrate
 
 
-let scores = y
-if (scores > y) {console.log( "added to my score")};
+let scores = prompt("add your score")
+if (scores > 0 && scores <=90) {console.log( "added to my score")} ;
 
-if (scores >90){console.log( " we should celebrate")};
-
+if (scores >90){console.log( " Score added  we should celebrate")} 
+else {console.log("Please add a number greater than 0")} ;
 
 // --------------- Q5.3:----------------
 
@@ -171,8 +175,9 @@ let password = "HBffN90oDVDFRET";
 // otherwise Please write a strong valid password.
 
  if ( password.length > 9 && password.length<20){
- console.log("your password is strong enough");} 
-else { console.log("lease write a strong valid password.");} 
+ console.log("your password is strong enough")} 
+
+else { console.log("Please write a strong valid password.");} 
 
 // ---------------Q5.4:----------------
 
@@ -197,11 +202,11 @@ let geographyGrade = 70;
 
 
 average = (90+97+80+78+70)/5
-console.log(average)
-if (average >90) {console.log("your average is excellent")}
-if (average<90 && >82){console.log("our average is veryGood")}
-if(average<80 %% >70){console.log("your average is good")}
-else {console.log("your average is good")}
+{console.log("Your average is " + average)}
+if (average >90) {console.log("your average is excellent");} 
+if (average<90 && average >80){console.log("yur average is very good");} 
+if(average>70 && average<80){console.log("your average is good");} 
+if (average <70) {console.log("You need to work harder")} ;
 
 
 
@@ -236,12 +241,12 @@ Musical groups have special names based on the number of people in the group.
 /* Your code here */
 
 let musicians = 2
-if (musicians <=0) {console.log("not a group")}
-if (musicians =1) {console.log("solo")}
-if (musicians =2) {console.log("duet")}
-if ( musicians=3) {console.log("trio")}
-if ( musicians=4) {console.log("quartet")}
-if ( musicians>4) {console.log("this is a large group")}
+if (musicians ===0) {console.log("not a group");}
+if (musicians ===1) {console.log("solo");}
+if (musicians ===2) {console.log("duet");}
+if ( musicians===3) {console.log("trio");}
+if ( musicians===4) {console.log("quartet");}
+if ( musicians>4) {console.log("this is a large group")};
 
 
 //---------------------Part3:Advanced---------------------
@@ -267,15 +272,18 @@ let herbivores
     (change the value of them to test your code)
     - `if` statements aren't allowed 
 */
-category = undefined
-let herbivores = eatsPlants
-let carnivores = eatsAnimal 
-let omnivores = herbivores + carnivores
- if (herbivores)false
-if (carnivores)false
 
 
--
+let eatsPlants = "herbivores"
+let eatsAnimal = "carnivores"
+ omnivores = eatsPlants + eatsAnimal
+category = prompt("Insert category eatPlants or eatsAnimal") 
+ if (category ===herbivores){console.log(false)}
+if (category===carnivores){console.log(false)}
+if (category === omnivores){console.log(false)}
+else{(undefined) }
+
+
 
 // ---------------Q9---------------
 /*
@@ -285,9 +293,10 @@ if (carnivores)false
         - print false if the string length is even.
  */
 
-string12 = "morning"
-If (string12.length = 6 {console.log("true")} 
-else { console.log("false")} 
+        let string12 = "morning" 
+        let length1=string12.length
+         if (length1===7){console.log(true)}
+         else  {console.log(false)}
 // ---------------Q10---------------
 /*
 Write a function called multiLineString that takes no parameter and return 
@@ -297,12 +306,13 @@ This is a long message
 that spans across multiple lines
 in the code.*/
 
+function multiLineString() {
+        console.log ("this is a long message \n\
+        that spans across multiple lines\n\
+        in the code.")
+} 
 
-function multiLineString = (){let string=("this is a long messagge \n
-that spans across multiple lines\n
-in the code.")}
 
-console.log(multiLineString()) ;
 
 // ---------------Q11---------------
 /* 
@@ -310,10 +320,10 @@ Write a function called getCharacter that takes two parameters
 a string and a number (index) and return the character at the given index.
 */
 function  getCharacter (a,b){
-        let ind = a[b]
+        let ind = [a,b]
         return ind }
-    console.log(getCharacter("string .0")) 
 
+    console.log(getCharacter("string .0")
 // ---------------Q12---------------
 /*
 Write a function called sayHello.
